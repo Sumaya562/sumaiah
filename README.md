@@ -1,2 +1,3 @@
 # sumaiah
-first of all my name is sumaiah i came from east africa
+i would describe myself as energetic, loyal, and self motivated
+and also describe myself as dependable,posotive and confident that is all about me 
