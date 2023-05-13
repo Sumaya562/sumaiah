@@ -1,0 +1,28 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>summaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <p class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae similique quibusdam! Provident distinctio consequatur placeat iusto amet quis adipisci illo ea possimus!
+         Quasi placeat blanditiis optio? Dolorem, esse quisquam.</p>
+         <p class="new">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae similique quibusdam! Provident distinctio consequatur placeat iusto amet quis adipisci illo ea possimus!
+            Quasi placeat blanditiis optio? Dolorem, esse quisquam</p>
+            <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae similique quibusdam! Provident
+                 distinctio consequatur placeat iusto amet quis adipisci illo ea possimus!
+      <p class="action">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae 
+        similique quibusdam! Provident distinctio consequatur placeat iusto amet quis adipisci illo ea possimus!</p>  
+        <p class="code">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Quo vitae similique quibusdam! Provident 
+            distinctio consequatur placeat iusto amet quis adipisci illo ea possimus!</p>           
+
+
+
+    <a href="sumayya.html">sumayya</a>></a>
+</body>
+</html>
