@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumayya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<h1 class="animal">Animals</h1>
+<h2  class="lion">lions</h2>
+<h3 class="sheap ">  sheaps</h3>
+<h4 class="lam">lams </h4>
+<h5 class="ele"> elephents</h5>
+<h6 class="cat">cats </h6>
+<body>
+
+    
+    
+    <a href="summaya.html">summayya</a>></a>
+</body>
+</html>
