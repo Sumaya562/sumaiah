@@ -1,14 +1,37 @@
 import re
+import pyodbc
+from pyodbc import drivers
 
 contact = {}
 
+# Database connection details
+Driver = 'SQL Server'
+server = 'SUMEYA'
+database = 'Note'
+connection_string = f"""
+Driver={{{Driver}}};
+Server={server};
+Database={database};
+Trusted_Connection=yes;
+"""
+
+def get_db_connection():
+    try:
+        conn = pyodbc.connect(connection_string)
+        return conn
+    except Exception as x:
+        print(f"Error connecting to the database: {x}")
+        return None
 
 def display_contact():
-    print("Name\t\tContact Number\t\tEmail")
-    for key in contact:
-        contact_info = contact[key]
-        print(f"{key}\t\t{contact_info['phone']}\t\t{contact_info['email']}")
-
+    conn = get_db_connection()
+    if conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT Name, Phone, Address, Email FROM note")
+        print("Name\t\tPhone\t\tAddress\t\tEmail")
+        for row in cursor:
+            print(f"{row.Name}\t\t{row.Phone}\t\t{row.Address}\t\t{row.Email}")
+        conn.close()
 
 def is_valid_name(name):
     """Validates the contact name."""
@@ -17,14 +40,13 @@ def is_valid_name(name):
         return False
     return True
 
-
 while True:
     try:
         choice = int(input(
             "1. Add New Contact\n2. Search Contact\n3. Display Contacts\n4. Update Contact\n5. Delete Contact\n6. Exit\nEnter your choice: "))
         if choice == 1:
             name = input("Enter the contact name: ")
-            if not is_valid_name(name):  #Check if name is valid before adding
+            if not is_valid_name(name):  # Check if name is valid before adding
                 continue  # Skip adding the contact if name is invalid
             phone = input("Enter the mobile number: ")
             address = input("Enter your address or district: ")
